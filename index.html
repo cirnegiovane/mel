@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      background-color: #ffffff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      padding: 0;
+    }
+    
+    .container {
+      text-align: center;
+    }
+    
+    .text {
+      font-size: 24px;
+      color: #ff0000;
+      margin-bottom: 10px;
+    }
+    
+    .heart {
+      display: inline-block;
+      width: 30px;
+      height: 30px;
+      background-color: #ff0000;
+      position: relative;
+      transform: rotate(-45deg);
+      margin-right: 5px;
+    }
+    
+    .heart:before,
+    .heart:after {
+      content: "";
+      position: absolute;
+      width: 30px;
+      height: 30px;
+      background-color: #ff0000;
+    }
+    
+    .heart:before {
+      border-radius: 50%;
+      top: -15px;
+      left: 0;
+    }
+    
+    .heart:after {
+      border-radius: 50%;
+      top: 0;
+      left: 15px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="text">Melissa, eu te amo</div>
+    <div class="heart"></div>
+  </div>
+</body>
+</html>
